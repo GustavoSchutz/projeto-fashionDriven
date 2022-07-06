@@ -2,5 +2,160 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    font-family: 'Roboto', sans-serif;
 }
 
+/* ==TOPO==TOPO==TOPO==TOPO==TOPO==TOPO==TOPO==TOPO==TOPO== */
+
+body {
+    background-color: #F2F2F2;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    top: 0;
+    width: 100vw;
+    height: 7.66vh;
+    min-height: 4rem;
+    background-color: #404EED;
+}
+
+.fixheader {
+    height: 7.66vh;
+    background-color: transparent;
+}
+
+.topLogo {
+    margin-left: 5.86vw;
+    display: flex;
+    position: fixed;
+    align-items: center;
+}
+.logo {
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-family: 'New Rocker', cursive;
+}
+
+.icon img {
+    width: 3.4rem;
+    margin-right: .5rem;
+}
+
+/* ==MEIO==MEIO==MEIO==MEIO==MEIO==MEIO==MEIO==MEIO==MEIO== */
+
+h4, h5 {
+    font-size: 1.2rem;
+}
+h4 {
+    margin-bottom: 1rem;
+}
+h5 {
+    margin-top: 1rem;
+}
+.margemtopo {
+    margin-top: 1rem;
+}
+input {
+    box-sizing: border-box;
+    font-size: 1rem;
+    color: #818181;
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: .4rem;
+    text-decoration: none;
+    padding-left: 1rem;
+    width: 29.5vw;
+    height: calc(2.5rem + 1vh);
+    margin-bottom: 2rem;
+}
+.confirmarPedido {
+    font-size: 1.35rem;
+    color: #FFFFFF;
+    background-color: #C4C4C4;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    width: 29.5vw;
+    height: calc(2.5rem + 1vh);
+    border-radius: .4rem;
+
+}
+.form {
+    height: ;
+    background-color: #FFFFFF;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formContent {
+    width: 29.85vw;
+}
+.formContent img {
+    width: 5vw;
+}
+.asset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #404EED;
+    box-sizing: border-box;
+    width: 50vw;
+    padding: 2rem 2rem;
+}
+
+.asset img {
+    width: calc(45vw);
+    
+}
+
+.content {
+    display: flex;
+}
+.tecido, .gola, .modelo {
+    margin-bottom: 2rem;
+}
+.modelos, .golas, .tecidos {
+    display: flex;
+    justify-content: space-between;
+
+}
+.tshirt, .camiseta, .mangaLonga, .golaV, .golaRedonda, .golaPolo, .seda, .algodao, .poliester {
+    background-color: #f2f2f2;
+    border: 1px solid #c4c4c4;
+    border-radius: 50%;
+    width: 6vw;
+    height: 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tecido1, .tecido2, .tecido1, .gola1, .gola2, .gola3, .modelo1, .modelo2, .modelo3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tecido img {
+    width: 4vw;
+}
+
+/* ==BOT==BOT==BOT==BOT==BOT==BOT==BOT==BOT==BOT==BOT==BOT== */
+
+.conteudoPedidos {
+    margin: 2rem 0;
+    margin-left: 20vw;
+}
+.pedidos {
+    display: flex;
+
+}
+
+.pedido {
+    background-color: #FFFFFF;
+    margin-right: 1rem;
+}
