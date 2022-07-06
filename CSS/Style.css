@@ -24,6 +24,7 @@ header {
 
 .fixheader {
     height: 7.66vh;
+    min-height: 4rem;
     background-color: transparent;
 }
 
@@ -46,14 +47,19 @@ header {
 
 /* ==MEIO==MEIO==MEIO==MEIO==MEIO==MEIO==MEIO==MEIO==MEIO== */
 
+.content {
+    max-width: 100vw;
+}
 h4, h5 {
-    font-size: 1.2rem;
+    font-size: 1.3vw;
 }
 h4 {
     margin-bottom: 1rem;
 }
 h5 {
+
     margin-top: 1rem;
+    text-align: center;
 }
 .margemtopo {
     margin-top: 1rem;
@@ -83,6 +89,9 @@ input {
     border-radius: .4rem;
 
 }
+.botaoValido {
+    background-color: #404EED;
+}
 .form {
     height: ;
     background-color: #FFFFFF;
@@ -91,6 +100,8 @@ input {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 .formContent {
     width: 29.85vw;
@@ -134,28 +145,55 @@ input {
     align-items: center;
     justify-content: center;
 }
-.tecido1, .tecido2, .tecido1, .gola1, .gola2, .gola3, .modelo1, .modelo2, .modelo3 {
+.tecido1, .tecido2, .tecido3, .gola1, .gola2, .gola3, .modelo1, .modelo2, .modelo3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 10vw;
 }
-.tecido img {
+.tecido img, .modelo img {
     width: 4vw;
 }
 
 /* ==BOT==BOT==BOT==BOT==BOT==BOT==BOT==BOT==BOT==BOT==BOT== */
 
+h2 {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+strong {
+    font-weight: bold;
+}
+
 .conteudoPedidos {
     margin: 2rem 0;
-    margin-left: 20vw;
+    margin-left: 10vw;
 }
 .pedidos {
     display: flex;
+    max-width: 90vw;
+    overflow: scroll;
 
 }
 
 .pedido {
     background-color: #FFFFFF;
     margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.criador {
+    margin: 1rem 0;
+}
+
+
+/* ==TRANSITIONS==TRANSITIONS==TRANSITIONS==TRANSITIONS==TRANSITIONS==TRANSITIONS== */
+
+.selectedItem {
+    box-sizing: border-box;
+    border: .2rem solid #404EED;
 }

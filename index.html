@@ -27,15 +27,15 @@
                     <h4>Escolha o modelo</h4>
                     <div class="modelos">
                         <div class="modelo1">
-                            <div class="tshirt"><img src="./images/notion/tshirt.png" alt=""></div>
+                            <div class="tshirt" onclick="selecionarModelo(this)"><img src="./images/notion/tshirt.png" alt=""></div>
                             <h5>T-Shirt</h5>
                         </div>
                         <div class="modelo2">
-                            <div class="camiseta"><img src="./images/notion/Camiseta.png" alt=""></div>
+                            <div class="camiseta" onclick="selecionarModelo(this)"><img src="./images/notion/Camiseta.png" alt=""></div>
                             <h5>Camiseta</h5>
                         </div>
                         <div class="modelo3">
-                            <div class="mangaLonga"><img src="./images/notion/Mangalonga.png" alt=""></div>
+                            <div class="mangaLonga" onclick="selecionarModelo(this)"><img src="./images/notion/Mangalonga.png" alt=""></div>
                             <h5>Manga Longa</h5>
                         </div>
                     </div>
@@ -44,15 +44,15 @@
                     <h4>Escolha a gola</h4>
                     <div class="golas">
                         <div class="gola1">
-                            <div class="golaV"><img src="./images/notion/GolaV.png" alt=""></div>
+                            <div class="golaV" onclick="selecionarGola(this)"><img src="./images/notion/GolaV.png" alt=""></div>
                             <h5>Gola-V</h5>
                         </div>
                         <div class="gola2">
-                            <div class="golaRedonda"><img src="./images/notion/GolaRedonda.png" alt=""></div>
+                            <div class="golaRedonda" onclick="selecionarGola(this)"><img src="./images/notion/GolaRedonda.png" alt=""></div>
                             <h5>Gola redonda</h5>
                         </div>
                         <div class="gola3">
-                            <div class="golaPolo"><img src="./images/notion/GolaPolo.png" alt=""></div>
+                            <div class="golaPolo" onclick="selecionarGola(this)"><img src="./images/notion/GolaPolo.png" alt=""></div>
                             <h5>Gola polo</h5>
                         </div>
                     </div>
@@ -61,15 +61,15 @@
                     <h4>Escolha o tecido</h4>
                     <div class="tecidos">
                         <div class="tecido1">
-                            <div class="seda"><img src="./images/notion/Seda.png"  alt=""></div>
+                            <div class="seda" onclick="selecionarTecido(this)"><img src="./images/notion/Seda.png"  alt=""></div>
                             <h5>Seda</h5>
                         </div>
                         <div class="tecido2">
-                            <div class="algodao"><img src="./images/notion/Algodão.png" alt=""></div>
+                            <div class="algodao" onclick="selecionarTecido(this)"><img src="./images/notion/Algodão.png" alt=""></div>
                             <h5>Algodão</h5>
                         </div>
                         <div class="tecido3">
-                            <div class="poliester"><img src="./images/notion/Poliester.png" alt=""></div>
+                            <div class="poliester" onclick="selecionarTecido(this)"><img src="./images/notion/Poliester.png" alt=""></div>
                             <h5>Poloester</h5>
                         </div>
                     </div>
@@ -77,7 +77,7 @@
             </div>
             <div class="imgReferencia">
                 <h4 class="margemtopo">Imagem de referência</h4>
-                <input type="url" placeholder="Insira o link">
+                <input id="linkReferencia" type="url" placeholder="Insira o link" required>
             </div>
             <button class="confirmarPedido" onclick="confirmarPedidio()"> Confirmar pedido</button>
         </div>
@@ -90,19 +90,51 @@
            <div class="pedidos">
                 <div class="pedido">
                     <img src="./images/notion/Blusa1.png" alt="">
-                    <p>Criador: Agata</p>
+                    <div class="criador">
+                        <strong>Criador: </strong><span>Agata</span>
+                    </div>
                 </div>
                 <div class="pedido">
                     <img src="./images/notion/Blusa1.png" alt="">
-                    <p>Criador: Agata</p>
+                    <div class="criador">
+                        <strong>Criador: </strong><span>Agata</span>
+                    </div>
                 </div>
                 <div class="pedido">
                     <img src="./images/notion/Blusa1.png" alt="">
-                    <p>Criador: Agata</p>
+                    <div class="criador">
+                        <strong>Criador: </strong><span>Agata</span>
+                    </div>
                 </div>
                 <div class="pedido">
                     <img src="./images/notion/Blusa1.png" alt="">
-                    <p>Criador: Agata</p>
+                    <div class="criador">
+                        <strong>Criador: </strong><span>Agata</span>
+                    </div>
+                </div>
+                <div class="pedido">
+                    <img src="./images/notion/Blusa1.png" alt="">
+                    <div class="criador">
+                        <strong>Criador: </strong><span>Agata</span>
+                    </div>
+                </div>
+                <div class="pedido">
+                    <img src="./images/notion/Blusa1.png" alt="">
+                    <div class="criador">
+                        <strong>Criador: </strong><span>Agata</span>
+                    </div>
+                </div>
+                <div class="pedido">
+                    <img src="./images/notion/Blusa1.png" alt="">
+                    <div class="criador">
+                        <strong>Criador: </strong><span>Agata</span>
+                    </div>
+                </div>
+                <div class="pedido">
+                    <img src="./images/notion/Blusa1.png" alt="">
+                    <div class="criador">
+                        <strong>Criador: </strong><span>Agata</span>
+                    </div>
                 </div>
            </div>
         </div>
