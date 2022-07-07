@@ -184,10 +184,21 @@ strong {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    min-width: 10vw;
+    min-height: 10vw;
+    padding-top: 2vh;
+}
+.pedido img {
+    width: 6vw;
+    max-height: 9vh;
+    object-fit: contain;
 }
 .criador {
+    text-align: center;
     margin: 1rem 0;
+    max-height: 1rem;
+    max-width: 10vw;
 }
 
 

@@ -1,3 +1,5 @@
+getLastOrders();
+
 let imgReferencia;
 let selecionaTecido = false;
 let selecionaModelo = false;
@@ -50,4 +52,39 @@ function ativarBotao() {
     if (linkValido && selecionaGola && selecionaModelo && selecionaTecido) {
         confirmarPedido.classList.add('botaoValido')
     }
+}
+
+// =================================
+
+function getLastOrders() {
+    const resposta = axios.get("https://mock-api.driven.com.br/api/v4/shirts-api/shirts");
+
+    resposta.then(writeLastOrders);
+    resposta.catch(writeGetError);
+}
+
+function writeLastOrders(ordersObject) {
+
+    console.log(ordersObject)
+    console.log(ordersObject.data.length)
+    const elemento = document.querySelector(".pedidos");
+
+    elemento.innerHTML = "";
+
+    for (i = 0; i < ordersObject.data.length; i++) {
+        elemento.innerHTML += `
+        <div id=" ${ordersObject.data[i].id}" class="pedido">
+            <img src=${ordersObject.data[i].image} alt="">
+            <div class="criador">
+                <strong>Criador: </strong><span>${ordersObject.data[i].owner}</span>
+            </div>
+        </div>
+        `
+    }
+
+}
+
+function writeGetError(error) {
+    console.log(error.data)
+    alert("houve um equivico!!")
 }
