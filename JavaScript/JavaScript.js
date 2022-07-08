@@ -158,6 +158,7 @@ function getElementInfo(element) {
     if (confirm("Deseja confirmar esse pedido?")){
         let newOrderID = element.id;
         getResult[newOrderID].author = userName;
+        getResult[newOrderID].owner = userName;
         delete getResult[newOrderID].id;
         postOrder = getResult[newOrderID];
 
