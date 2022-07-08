@@ -208,3 +208,97 @@ strong {
     box-sizing: border-box;
     border: .2rem solid #404EED;
 }
+
+@media (max-width: 1050px){
+   .asset {
+        display: none;
+    } 
+
+    .content {
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form {
+        width: 100vw;
+        max-width: 670px;
+    }
+
+    .modelos, .golas, .tecidos {
+        justify-content: space-around;
+    }
+
+    .modelo1, .modelo2, .modelo3, .gola1, .gola2, .gola3, .tecido1, .tecido2, .tecido3 {
+        width: 19vw;
+    }
+
+    .tecidos img, .modelos img {
+        width: 12vw;
+    }
+
+    .formContent, .imgReferencia {
+        width: 90vw;
+        max-width: 510px;
+    }
+
+    input {
+        width: 75vw;
+        max-width: 520px;
+    }
+
+    .confirmarPedido {
+        width: 75vw;
+        max-width: 520px;
+    }
+
+    h4, h5 {
+        font-size: 1rem;
+    }
+
+    .golas img {
+        width: 16vw;
+    }
+
+    .pedidos {
+        flex-direction: column;
+    }
+
+    .conteudoPedidos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .pedido img {
+        width: 30vw;
+        max-height: 15vh;
+    }
+
+    .criador {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .pedido {
+        margin-bottom: 2rem;
+        margin-right: 0;
+        max-width: 200px;
+    }
+    
+    .type {
+        width: 19vw;
+        height: 19vw;
+    }
+
+    .imgReferencia {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+}
+

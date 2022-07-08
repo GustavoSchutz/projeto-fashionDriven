@@ -82,7 +82,7 @@ function selecionarTecido(elemento) {
     } else if (newOrderMaterial === "Algodão") {
         newOrderMaterial = 'cotton';
     } else {
-        newOrderMaterial = 'polo';
+        newOrderMaterial = 'polyester';
     }
 
     ativarBotao()
@@ -95,6 +95,12 @@ function ativarBotao() {
     if (linkValido && selecionaGola && selecionaModelo && selecionaTecido) {
         confirmarPedido.classList.add('botaoValido');
         newOrderImage = document.getElementById('linkReferencia').value;
+    }
+}
+
+function confirmStartOrder() {
+    if (confirm("Deseja confirmar o pedido?")) {
+        startOrder();
     }
 }
 
@@ -165,4 +171,5 @@ function postError(error) {
 
 function postSuccessful(success) {
     console.log(success.data);
+    getLastOrders();
 }
