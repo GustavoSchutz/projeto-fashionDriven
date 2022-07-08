@@ -15,6 +15,7 @@ let newOrderModel;
 let newOrderNeck;
 let newOrderMaterial;
 let newOrderImage;
+let getResult;
 
 
 function selecionarModelo(elemento) {
@@ -133,6 +134,7 @@ function getLastOrders() {
 
 function writeLastOrders(ordersObject) {
 
+    getResult = ordersObject.data;
     console.log(ordersObject)
     console.log(ordersObject.data.length)
     const elemento = document.querySelector(".pedidos");
@@ -141,13 +143,25 @@ function writeLastOrders(ordersObject) {
 
     for (i = 0; i < ordersObject.data.length; i++) {
         elemento.innerHTML += `
-        <div id=" ${ordersObject.data[i].id}" class="pedido">
+        <div id="${i}" onclick="getElementInfo(this)" class="pedido">
             <img src=${ordersObject.data[i].image} alt="">
             <div class="criador">
                 <strong>Criador: </strong><span>${ordersObject.data[i].owner}</span>
             </div>
         </div>
-        `
+        `;
+    }
+
+}
+
+function getElementInfo(element) {
+    if (confirm("Deseja confirmar esse pedido?")){
+        let newOrderID = element.id;
+        getResult[newOrderID].author = userName;
+        delete getResult[newOrderID].id;
+        postOrder = getResult[newOrderID];
+
+        postNewOrder();
     }
 
 }
@@ -167,6 +181,7 @@ function postNewOrder() {
 
 function postError(error) {
     console.log(error.data);
+    alert("Ops, não conseguimos processar sua encomenda.");
 }
 
 function postSuccessful(success) {
