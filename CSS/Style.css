@@ -155,6 +155,12 @@ input {
 .tecido img, .modelo img {
     width: 4vw;
 }
+.imgReferencia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 /* ==BOT==BOT==BOT==BOT==BOT==BOT==BOT==BOT==BOT==BOT==BOT== */
 
