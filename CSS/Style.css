@@ -235,6 +235,7 @@ strong {
 
     .tecidos img, .modelos img {
         width: 12vw;
+        max-width: 95px;
     }
 
     .formContent, .imgReferencia {
@@ -258,6 +259,7 @@ strong {
 
     .golas img {
         width: 16vw;
+        max-width: 120px;
     }
 
     .pedidos {
@@ -291,6 +293,8 @@ strong {
     .type {
         width: 19vw;
         height: 19vw;
+        max-width: 135px;
+        max-height: 135px;
     }
 
     .imgReferencia {
